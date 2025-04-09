@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Company Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/footer.css"/>
+  <style>
+    
+  body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f172a;
+  color: white;
+}
+
+.hero {
+  background-image: url('https://img.freepik.com/free-photo/overhead-view-grey-craftpapers-blue-background_23-2147878455.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glow-title {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff;
+  animation: glowAnim 2s infinite alternate;
+}
+
+.hero-sub {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #dbeafe;
+}
+
+.services {
+  padding: 0px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.glow-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px #00f7ff;
+}
+
+.service-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.service-card {
+  background: #1e293b;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,255,255,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.service-card img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #38bdf8;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #cbd5e1;
+}
+
+.cta-section {
+  background-color: #1e3a8a;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  color: #dbeafe;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #0ea5e9;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #38bdf8;
+}
+
+@keyframes glowAnim {
+  from {
+    text-shadow: 0 0 15px #00f7ff;
+  }
+  to {
+    text-shadow: 0 0 35px #00f7ff, 0 0 60px #00f7ff;
+  }
+}
+
+  </style>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <%- include('../partials/navbar') %>
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="glow-title">🚀 Our Portfolio</h1>
+      <p class="hero-sub">We build powerful digital solutions to grow your business</p>
+    </div>
+  </header>
+
+  <section class="services">
+    <h2 class="glow-heading">🌐 View the range of projects completed by Nextloop Technologies. </h2>
+    <div class="service-grid">
+
+        <a href="/portfoliocard1" class="service-card">
+        <img src="https://www.nextlooptechnologies.com/_next/image/?url=%2Fportfolio%2F0.png&w=1920&q=75" alt="Shower Wealth Academy" />
+        <h3>Shower Wealth Academy</h3>
+        <p>Reputable stock market firm ShoweWealth Academy, with its headquarters in Bhopal, is committed to busting myths about the stock .......</p>
+    </a>
+
+    <a href="/portfoliocard2" class="service-card">
+        <img src="https://www.nextlooptechnologies.com/_next/image/?url=%2Fportfolio%2F1.png&w=1920&q=75" alt="BrewPod" />
+        <h3>BrewPod</h3>
+        <p>Brewpod, a versatile beer brewing application, caters to the needs of both novice and seasoned brewers  With a wide range of ......</p>
+    </a>
+
+    <a href="/portfoliocard3" class="service-card">
+        <img src="https://www.nextlooptechnologies.com/_next/image/?url=%2Fportfolio%2F2.png&w=1920&q=75" alt="Cybersecurity" />
+        <h3>Millennials</h3>
+        <p>Millennialz is an ambitious all-in-one web application that aims to bring together various aspects of daily life and entertainment.....</p>
+    </a>
+
+    <a href="/portfoliocard4" class="service-card">
+        <img src="https://www.nextlooptechnologies.com/_next/image/?url=%2Fportfolio%2F3.png&w=1920&q=75" alt="Blue Bird Event" />
+        <h3>Blue Bird Event</h3>
+        <p>Bluebird Events Company is an event management company trying to make its events more Cost-effective, Hassle-free, and Systematic.......</p>
+    </a>
+
+    <a href="/portfoliocard1" class="service-card">
+        <img src="https://quicklyplatforms.com/assets/img/alive.webp" alt="alive"/>
+        <h3>Alive</h3>
+        <p>The Alive Notification App is designed to promote user safety and well-being by providing a mechanism for users to stay connected .....</p>
+    </a>
+
+    <a href="/portfoliocard1" class="service-card">
+        <img src="https://quicklyplatforms.com/assets/img/bellyful.webp" alt="Bellyful" />
+        <h3>Bellyful</h3>
+        <p>Objective: Develop a price comparison and deal app to streamline shopping decisions for users, providing significant savings in ......</p>
+    </a>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2 class="glow-heading">✨ Want To Build Something Amazing?</h2>
+    <p>Let’s create something impactful together. From idea to execution, we deliver success.</p>
+    <a href="/getintouch" class="cta-btn">Contact Us</a>
+  </section>
+
+  <%- include('../partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Blogs</title>
+  <link rel="stylesheet" href="/css/styles.css"/>
+  <link rel="stylesheet" href="/css/footer.css"/>
+<style>
+    /* Banner Section */
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px 20px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.4);
+  color: #fff;
+  letter-spacing: 1px;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #471c91, 0 0 30px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 20px #ffffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.blog-container {
+    padding: 50px 20px;
+   
+    margin: auto;
+   
+   
+}
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card h2 {
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+</style>
+</head>
+<body>
+
+    <%- include('../partials/navbar') %>
+  <!-- Banner Section -->
+  <div class="banner">
+    <div class="banner-overlay">
+      <h1 class="banner-title">Our Blogs</h1>
+      <p class="banner-subtitle">Explore insights, trends & tips across web, mobile, UI/UX, and digital strategy. If you are looking for a complete business solution at a one place in combination with distinctive designs, that is what you can expect from us. To stimulate the growth of your company, we focus on various services, although we do not limit ourselves to this. We keep learning and stay ourselves up to date with current market trends.</p>
+    </div>
+  </div>
+
+  <!-- Blogs Section -->
+  <section class="blog-container">
+    <div class="blogs-grid">
+      <a href="/blogs/fundamentals" class="blog-card">
+        <img src="https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg" alt="Web Design">
+        <h2>Mastering the Fundamentals of Website and Web App Design</h2>
+      </a>
+
+      <a href="/blogs/ecommerce" class="blog-card">
+        <img src="https://img.freepik.com/premium-photo/businesman_1197721-63277.jpg" alt="E-commerce">
+        <h2>The Rise of E-Commerce: Trends and Opportunities for Business Owners</h2>
+      </a>
+
+      <a href="/blogs/mobileapp" class="blog-card">
+        <img src="https://img.freepik.com/free-vector/app-development-banner_33099-1720.jpg" alt="Mobile App">
+        <h2>Navigating the Mobile App Development Journey: From Concept to Launch</h2>
+      </a>
+
+      <a href="/blogs/uiux" class="blog-card">
+        <img src="https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg?uid=R193168175&ga=GA1.1.747202382.1741251701&semt=ais_hybrid&w=740" alt="UI UX Design">
+        <h2>The Art of UI/UX & Graphics Design: Creating Engaging Digital Experiences</h2>
+      </a>
+
+      <a href="/blogs/marketing" class="blog-card">
+        <img src="https://img.freepik.com/free-vector/seo-concept-illustration_114360-5766.jpg?uid=R193168175&ga=GA1.1.747202382.1741251701&semt=ais_hybrid&w=740" alt="Marketing SEO">
+        <h2>Unlocking Success with Digital Marketing & SEO Services</h2>
+      </a>
+ 
+      <a href="/blogs/marketing" class="blog-card">
+        <img src="https://img.freepik.com/free-photo/customer-relationship-management-concept_23-2150038401.jpg
+        " alt="CRM">
+        <h2>In today's rapidly evolving business landscape, staying competitive requires more than just off-the-shelf software solutions.</h2>
+      </a>
+    </div>
+  </section>
+
+  <%- include('../partials/footer') %>
+</body>
+</html>
+
+
