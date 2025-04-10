@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/footer.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 90vh;
+      background: url('https://images.pexels.com/photos/8622843/pexels-photo-8622843.jpeg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .hero-overlay h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero-overlay p {
+      font-size: 1.2rem;
+      max-width: 700px;
+    }
+.project{
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 3rem;
+}
+.section {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  display: inline;
+  justify-content: flex-end;
+}
+
+.container {
+  padding-top: 30px;
+  padding-right: 80px;
+  max-width: 1400px;
+  text-align: left;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  color: #058f38;
+  margin-bottom: 15px;
+}
+
+.container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .container h2 {
+    font-size: 2rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+}
+ 
+  </style>
+</head>
+<body>
+  <%- include('../partials/navbar') %>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>portfolio</h1>
+      <p>View the range of projects completed by Nextloop Technologies. We have provided 
+        assistance to a wide range of firms in various industries and locations across the 
+        globe, from small startups to large corporations. This demonstrates our exceptional
+         ability to generate fresh concepts and tailor solutions to the specific needs of each client. 
+         So, if you're interested in learning more about what Nextloop can accomplish for your company, 
+         have a look at our portfolios!</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  
+    <div class="project">
+      <h2>Shower Wealth Academy</h2>
+    </div>
+ 
+
+  <!-- New Section After About Us -->
+<section class="section">
+  <div class="container">
+    <h2>Background:</h2>
+    <p>
+      Reputable stock market firm ShoweWealth Academy, with its headquarters in Bhopal, is committed to busting
+       myths about the stock market's resemblance to gambling. ShowerWealth is a company that teaches people about 
+       the nuances of the stock market. It is run by Ankush, a seasoned leader with a deep understanding of the market 
+       and efficient teaching techniques.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Objective:</h2>
+    <p>
+      Creating a static website that provides prospective students with information was the main goal.
+       There are several important sections on the website, including the Home, About Us, Gallery, Resources,
+        Courses, and Contact pages. It also has a pop-up offering savings on courses and future events. 
+        The introduction of a chatbot enables the efficient resolution of customer inquiries, whereas the 
+        procedure of opening a Demat account expedites users' entry into trading. Forms are also used to
+         effectively collect student data and information.
+
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Defining the Journey:</h2>
+    <p>
+      Acquiring information and gaining practical experience are essential components of starting a 
+      career in the stock market. This path is carefully planned at ShoweWealth Academy to empower
+       people at every turn. First, an in-depth understanding of the stock market is acquired through 
+       organized classes and online tools. As people continue on, they will see that they can easily open 
+       a Demat account and begin trading. Ongoing education and practical experience combine to provide the 
+       development required to pursue a profitable stock market career.
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Mission:</h2>
+    <p>
+      The main goal of ShoweWealth Academy is to give students a thorough understanding of the stock market 
+      so they can see a successful future in this exciting industry. The academy seeks to develop people who 
+      are not only skilled traders but also competent in negotiating the complexities of the financial market
+       through thorough instruction and direction.
+ 
+    </p>
+  </div>
+
+  <div class="container">
+    <h2>Technologies Used:</h2>
+    <p>
+      ShoweWealth Academy leveraged Astro.JS, a cutting-edge web framework renowned for its 
+      efficiency in content-driven website development. Astro.JS is favored for its rapid loading
+       times and robust SEO capabilities, making it an ideal choice for a platform aimed at delivering
+        informative content. The website's architecture prioritizes content-driven design, ensuring that 
+        users have access to valuable resources and educational materials seamlessly.
+
+    </p>
+  </div>
+
+  
+  <div class="container">
+    <h2>Timeline & Team Size:</h2>
+    <p>
+      The initiative started with a committed group of six people:
+
+
+
+A senior frontend developer, a backend developer, and a junior frontend developer make up the three developers.
+One designer is in charge of creating a user interface that is both aesthetically pleasing and easy to use.
+One QA Specialist: Making sure the performance and functionality of the website are up to standards.
+One Project Manager: Project managers oversee the project's execution and assign team members tasks.
+  <br><br>
+The project was completed in a short amount of time, taking only 2 weeks to finish. 
+    </p>
+  </div>
+
+  
+  <div class="container">
+    <h2>Challenges:</h2>
+    <p>
+      Throughout the development process, a number of difficulties were faced, including:
+Creating a user experience that strikes a balance between ease of use and thorough information, appealing to both experts and students.
+Ensuring that the website is responsive to different screen sizes and devices in order to improve user experience.
+Adaptability and flexibility are necessary for the team to efficiently handle changing client requests and unstable requirements.
+Making educated decisions throughout the project lifecycle by clearly and understandably communicating technical issues to non-technical stakeholders.
+
+    </p>
+  </div>
+
+  
+  <div class="container">
+    <h2>Conclusion:</h2>
+    <p>
+      The process by which ShoweWealth Academy developed its static website from conception to launch is a 
+      prime example of its dedication to both technological innovation and high standards in education. 
+      Through the use of state-of-the-art technology and a user-centered approach, the academy hopes to
+       enable people to start profitable careers in the stock market. With ongoing education, mentorship, 
+       and hands-on training, ShoweWealth Academy is committed to developing the next generation of financial 
+       sector professionals.
+    </p>
+  </div>
+
+</section>
+
+<%- include('../partials/footer') %>
+</body>
+</html>
+
+   
+   

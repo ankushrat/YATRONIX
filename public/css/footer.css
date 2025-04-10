@@ -88,6 +88,9 @@
   .footer-bottom-right {
     text-align: right;
   }
+  .social-icons a {
+    text-decoration: none; /* Removes underline */
+  }
   .social-icons a img {
     width: 25px;
     margin: 0 10px;
@@ -122,6 +125,16 @@
     }
   }
   .contact-button {
+   
+  padding-left: 5%;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  }
+
+  .social-icons {
+    padding-left: 5%;
+    padding-bottom: 15px;
     margin-top: 15px;
     text-align: center;
   }
@@ -142,3 +155,81 @@
     transform: scale(1.05);
   }
   
+  /* ✅ Responsive Footer */
+@media (max-width: 1024px) {
+  .footer-column {
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  .footer-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-bottom-left,
+  .footer-bottom-center,
+  .footer-bottom-right {
+    text-align: center;
+  }
+
+    .contact-button {
+   
+      
+      padding-bottom: 15px;
+      margin-top: 15px;
+      text-align: center;
+      }
+  }
+
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 20px;
+  }
+
+  .footer-logo {
+    height: 80px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.95rem;
+  }
+
+  .footer-column p {
+    font-size: 0.85rem;
+  }
+
+  .contact-us-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  .social-icons a img {
+    width: 22px;
+    margin: 0 6px;
+  }
+}
+

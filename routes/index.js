@@ -130,6 +130,22 @@ router.get('/fundamentals', (req, res) => {
     res.render('pages/portfolio', { title: 'portfolio'})
   });
 
+  router.get("/portfolio1" , (req, res) => {
+    res.render('pages/portfolio1', { title: 'portfolio'})
+  });
+  router.get("/portfolio2" , (req, res) => {
+    res.render('pages/portfolio2', { title: 'portfolio'})
+  });
+  router.get("/portfolio3" , (req, res) => {
+    res.render('pages/portfolio3', { title: 'portfolio'})
+  });
+  router.get("/portfolio4" , (req, res) => {
+    res.render('pages/portfolio4', { title: 'portfolio'})
+  });
+  router.get("/portfolio5" , (req, res) => {
+    res.render('pages/portfolio5', { title: 'portfolio'})
+  });
+
 
   router.get('/getintouch', (req, res) => {
     res.render('pages/getintouch', { error: null });
