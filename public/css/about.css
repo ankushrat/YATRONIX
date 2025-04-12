@@ -177,7 +177,7 @@ section {
 
 .values-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Five boxes in a row */
+    grid-template-columns: repeat(7, 1fr); /* Five boxes in a row */
     gap: 20px; /* Space between boxes */
     justify-content: center;
     align-items: center;
@@ -223,7 +223,7 @@ section {
 /* Responsive Design */
 @media (max-width: 768px) {
     .values-container {
-        grid-template-columns: repeat(2, 1fr); /* Two boxes per row on smaller screens */
+        grid-template-columns: repeat(3, 1fr); /* Two boxes per row on smaller screens */
         gap: 15px;
     }
 

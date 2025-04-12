@@ -9,7 +9,7 @@
 <style>
     /* Banner Section */
 .banner {
-  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1500&q=80');
+  background-image: url('images/backgroundblog.jpeg');
   background-size: cover;
   background-position: center;
   height: 500px;
@@ -45,8 +45,6 @@
     text-shadow: 0 0 20px #ffffff, 0 0 30px #00ffff, 0 0 40px #00ffff;
   }
 }
-
-
 .banner-subtitle {
   font-size: 1.2rem;
   font-weight: 300;
@@ -59,11 +57,14 @@
    
    
 }
+
+ 
 .blogs-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
   gap: 30px;
+  grid-template-columns: 1fr; /* Mobile default: 1 column */
 }
+
 
 .blog-card {
   background: #fff;
@@ -77,10 +78,11 @@
 
 .blog-card img {
   width: 100%;
-  height: auto;
+  height: 70%;
 }
 
 .blog-card h2 {
+  text-align: center;
   padding: 20px;
   font-size: 1.2rem;
   line-height: 1.4;
@@ -89,6 +91,22 @@
 .blog-card:hover {
   transform: translateY(-10px);
 }
+
+
+/* Tablet (≥600px): 2 columns */
+@media (min-width: 600px) {
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Laptop/Desktop (≥1024px): 3 columns */
+@media (min-width: 1024px) {
+  .blogs-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 
 </style>
 </head>
@@ -99,7 +117,12 @@
   <div class="banner">
     <div class="banner-overlay">
       <h1 class="banner-title">Our Blogs</h1>
-      <p class="banner-subtitle">Explore insights, trends & tips across web, mobile, UI/UX, and digital strategy. If you are looking for a complete business solution at a one place in combination with distinctive designs, that is what you can expect from us. To stimulate the growth of your company, we focus on various services, although we do not limit ourselves to this. We keep learning and stay ourselves up to date with current market trends.</p>
+      <p class="banner-subtitle">Explore insights, trends & tips across web, mobile, UI/UX,
+         and digital strategy. If you are looking for a complete business solution at a one 
+         
+         place in combination with distinctive designs, that is what you can expect from us. 
+         To stimulate the growth of your company, we focus on various services, although we do not limit ourselves to this.
+          We keep learning and stay ourselves up to date with current market trends.</p>
     </div>
   </div>
 
