@@ -344,68 +344,7 @@ body {
   background: #ff6f61;
   color: #ffffff;
 }
-.image-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-}
 
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* optional dark overlay */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 20px;
-}
-
-.image-overlay h1 {
-  font-size: 2.8rem;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.image-overlay p {
-  font-size: 1.2rem;
-  color: #fff;
-  max-width: 700px;
-  margin-bottom: 30px;
-}
-
-.btn-connect {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #ffffff;
-  color: #ff6f61;
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.btn-connect:hover {
-  background: #ff6f61;
-  color: #ffffff;
-}
 
 /*------------------------------------------------------------------------------------*/
 
@@ -1015,13 +954,14 @@ height: auto;
 }
 
 .plan-box button {
+  width: 100%;
   margin-top: 15px;
   padding: 10px 15px;
   background-color: #e91e63;
   color: #fff;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: none;
 }
 
 /* Distinct Styles for Each Plan */
