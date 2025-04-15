@@ -38,19 +38,22 @@ router.get('/contact', (req, res) => {
 
 
 //our service 
+
 router.get('/angular', (req, res) => {
-    res.render('pages/angular', { title: 'angular js developement', error: null}); // Adjust the path if necessary
+  console.log(__dirname); // for debugging
+  res.render('pages/angular', { error: null });
 });
 
 //node js developer page 
 router.get('/node', (req, res) => {
-    res.render('pages/node', { title: 'node js developement', error: null}); // Adjust the path if necessary
+  res.render('pages/node', {error: null });
+});
+//react js page
+
+router.get('/react', (req, res) => {
+  res.render('pages/react', { error: null });
 });
 
-//react js page
-router.get('/react', (req, res) => {
-    res.render('pages/react', { title: 'react js developement', error: null}); // Adjust the path if necessary
-});
 
 //java page
 router.get('/java', (req, res) => {
